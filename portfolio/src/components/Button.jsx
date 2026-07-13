@@ -7,7 +7,8 @@ export default function Button({
     to,
     href,
     onDark = false,
-    class
+    className = "",
+    ...rest
 }) {
     const classes = [
         "btn",
