@@ -544,3 +544,41 @@
 @media (max-width: 760px) {
   .stat-row { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ===== Focus / research cards ===== */
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.focus-card {
+  background: var(--paper-2);
+  padding: 38px 32px;
+}
+
+.focus-index {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--teal);
+  letter-spacing: 0.08em;
+}
+
+.focus-card h3 {
+  font-size: 1.3rem;
+  margin-top: 16px;
+}
+
+.focus-card p {
+  margin-top: 12px;
+  color: var(--slate);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 860px) {
+  .focus-grid { grid-template-columns: 1fr; }
+}
