@@ -16,8 +16,15 @@ export default function Footer (){
                         </p>
                     </div>
                     <div>
-                        
+                        <div className="footer-heading">Navigate</div>
+                        <ul className="footer-links">
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/research">Research &amp; Publications</Link></li>
+                            <li><Link to="/speaking">Speaking &amp; Awards</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
+                        </ul>
                     </div>
+                    
                 </div>
             </div>
         </footer>
