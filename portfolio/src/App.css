@@ -1,3 +1,5 @@
+/* ===== Layout shell===== */
+
 .site {
   min-height: 100vh;
   display: flex;
@@ -13,6 +15,8 @@
   margin: 0 auto;
   padding: 0 28px;
 }
+
+/* ===== Navbar ===== */
 
 .navbar {
   position: sticky;
@@ -135,4 +139,66 @@
     font-size: 0.85rem;
     text-align: left;
   }
+
 }
+
+/* ===== Buttons ===== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
+  white-space: nowrap;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.btn-primary {
+  background: var(--teal);
+  color: #fff;
+}
+
+.btn-primary:hover { background: var(--teal-dark); }
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.btn-outline:hover {
+  background: var(--ink);
+  color: #fff;
+}
+
+.btn-outline.on-dark {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.btn-outline.on-dark:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--teal);
+  padding: 12px 4px;
+}
+
+.btn-ghost:hover {
+  color: var(--teal-dark);
+}
+
+.btn-sm {padding: 9px 16px; font-size: 0.78rem;}
+
+
+
