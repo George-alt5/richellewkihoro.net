@@ -293,3 +293,134 @@
   color: #fff;
   font-weight: 500;
 }
+
+/* ==================== Home hero — photo blending into clay panel ==================== */
+
+
+.home-hero {
+  position: relative;
+  min-height: 640px;
+  background: var(--clay);
+  overflow: hidden;
+  display: flex;
+}
+
+.home-hero-photo-wrap {
+  position: absolute;
+  inset: 0;
+  width: 56%;
+}
+
+.home-hero-photo-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--clay);
+  mix-blend-mode: color;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.home-hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  -webkit-mask-image: linear-gradient(to right, #000 55%, transparent 94%);
+  mask-image: linear-gradient(to right, #000 55%, transparent 94%);
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  width: 52%;
+  padding: 0 72px 0 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 640px;
+}
+
+.home-hero-name {
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(2.1rem, 4.4vw, 3.4rem);
+  color: #fff;
+  line-height: 1.08;
+}
+
+.home-hero-tag {
+  margin-top: 24px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.86);
+}
+
+.home-hero-actions {
+  margin-top: 42px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.home-hero-social {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.home-hero-social a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background 0.15s ease;
+}
+
+.home-hero-social a:hover {
+  background: rgba(255,255,255,0.26);
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    flex-direction: column;
+    min-height: 0;
+  }
+  .home-hero-photo-wrap {
+    position: static;
+    width: 100%;
+    height: 320px;
+  }
+  .home-hero-photo-wrap::after { display: none; }
+  .home-hero-photo {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .home-hero-content {
+    width: 100%;
+    margin-left: 0;
+    min-height: 0;
+    padding: 40px 28px 56px;
+  }
+
+  .home-hero-social {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    margin-top: 32px;
+  }
+}
