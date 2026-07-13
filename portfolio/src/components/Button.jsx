@@ -9,5 +9,21 @@ export default function Button({
     onDark = false,
     class
 }) {
-    
+    const classes = [
+        "btn",
+        `btn-${variant}`,
+        size === 'sm' ? "btn-sm" : "",
+        variant === "outline" && onDark ? "on-dark" : "",
+        className,
+    ]
+    .filter(Boolean)
+    .join(" ");
+
+    if (to) {
+        return (
+            <Link to={to} className={classes} {...rest}>
+                {children}
+            </Link>
+        )
+    }
 }
