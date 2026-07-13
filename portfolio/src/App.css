@@ -746,3 +746,51 @@
   border-radius: var(--radius);
 }
 
+/* ===== Researc proposals / publications ===== */
+
+.role-label { 
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform : uppercase;
+  color: var(--gold);
+  margin: 40px 0 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.role-label:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.proposal-item, .pub-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 24px;
+}
+
+.item-tag {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--slate-soft);
+  padding-top: 3px;
+}
+
+.item-meta {
+  margin-top: 8px;
+  font-size: 0.86rem;
+  color: var(--slate);
+  line-height: 1.6;
+}
+
+.item-meta a {
+  color: var(--teal);
+  border-bottom: 1px solid var(--teal);
+}
+
+.item-meta a:hover { color : var(--teal-dark); border-color: var(--teal-dark); }
+
+@media(max-width: 700px) {
+  .proposal-item, .pub-item { grid-template-columns: 1fr; gap: 8px; }
+}
+
