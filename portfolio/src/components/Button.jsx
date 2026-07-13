@@ -24,6 +24,18 @@ export default function Button({
             <Link to={to} className={classes} {...rest}>
                 {children}
             </Link>
-        )
+        );
     }
+    if (href) {
+        return(
+            <a href={href} className={classes} {...rest}>
+                {children}
+            </a>
+        );
+    }
+    return (
+        <button className={classes} {...rest}>
+            {children}
+        </button>
+    );
 }
