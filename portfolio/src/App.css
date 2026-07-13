@@ -794,3 +794,71 @@
   .proposal-item, .pub-item { grid-template-columns: 1fr; gap: 8px; }
 }
 
+/* ===== Awards / speaking ===== */
+
+.award-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.award-item {
+  display: flex;
+  grid-template-columns: 130px 1fr;
+  gap: 24px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.secion-dark .award-item { border-bottom: 1px solid var(--line-dark); }
+
+.award-year {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  color: var(--gold);
+}
+
+.award-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.award-org {
+  margin-top: 4px;
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.6)
+}
+
+@media (max-width: 700px) {
+  .award-item { grid-template-columns: 1fr; gap: 6px; }
+}
+
+.conf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: 16px;
+}
+
+.conf-card {
+  background: var(--paper-2);
+  padding: 28px;
+}
+
+.conf-card h4 {
+  font-size: 1.02rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.conf-card p {
+  margin-top: 8px;
+  font-size: 0.88rem;
+  color: var(--slate);
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .conf-grid { grid-template-columns: 1fr; }
+}
