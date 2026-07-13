@@ -24,9 +24,27 @@ export default function Footer (){
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
-                    
+                    <div className="footer-heading">Elsewhere</div>
+                    <ul className="footer-links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/richelle-kihoro/" target="_blank" rel="noreferrer">
+                            Linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="richellewrk@gmail.com">richellewrk@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="/RWK-CV.pdf" download>Download CV</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
+            <div className="footer-bottom">
+                <span>© {year} Richelle W. Kihoro. All rights reserved.</span>
+                <span>Nairobi, Kenya</span>
+            </div>
         </footer>
-    )
+    );
 }
