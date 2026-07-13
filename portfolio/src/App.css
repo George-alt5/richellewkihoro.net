@@ -424,3 +424,42 @@
     margin-top: 32px;
   }
 }
+
+/* ===== Specimen ledger marquee ===== */
+
+.ledger {
+  background: var(--clay-deep);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ledger-track {
+  display: inline-flex;
+  align-items: center;
+  animation: ledger-scroll 42s linear infinite;
+  padding: 13px 0;
+}
+
+@keyframes ledger-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.ledger-item {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: rgba(255,255,255,0.82);
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 26px;
+  border-right: 1px solid rgba(255,255,255,0.16);
+}
+
+.ledger-item b {
+  color: var(--gold);
+  font-weight: 500;
+}
