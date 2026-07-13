@@ -51,7 +51,22 @@ export default function Navbar(){
                     </button>
                 </div>
             </div>
-            
+            <nav className={"nav-mobile" + (open ? " open " : "")}>
+                {LINKS.map((link) => (
+                    <NavLink
+                    key={link.to}
+                    to={link.to}
+                    className={({isActive}) => "nav-link" + (isActive ? "active" : "")}
+                    end={link.to === "/"}
+                    onClick={() => setOpen(false)}
+                    >
+                        {link.label}
+                    </NavLink>
+                ))}
+                <a href="/RWK-CV.pdf" download className="nav-link" onClick={() => setOpen(false)}>
+                Download CV
+                </a>
+            </nav>
         </header>
-    )
+    );
 }
