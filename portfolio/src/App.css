@@ -582,3 +582,58 @@
 @media (max-width: 860px) {
   .focus-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Bio / about ===== */
+
+.bio-grid {
+  display: grid;
+  grid-template-colomns: 340px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.bio-portrait {
+  postion: sticky;
+  top: 110px;
+}
+
+.bio-portrait-frame {
+  aspect-ratio: 4/5;
+  background: linear-gradient(160deg, var(--teal-tint), var(--paper-2));
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bio-portrait img { width: 100%; height: 100%; object-fit: cover; }
+
+.bio-caption {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--slate);
+  margin-top: 14px;
+  line-height: 1.6;
+}
+
+.bio-text p {
+  font-size: 1.02rem;
+  color: var(--ink);
+  line-height:1.85;
+  margin-bottom: 20px;
+}
+
+.bio-text p.lede {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .bio-grid { grid-template-columns: 1fr; gap: 36px;}
+  .bio-portrait {position: static; max-width: 280px;}
+}
+
