@@ -862,3 +862,65 @@
 @media (max-width: 760px) {
   .conf-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Contact ===== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.contact-panel {
+  background: var(--paper-2);
+  padding: 52px;
+}
+
+.contact-panel.dark {
+  background: var(--ink);
+  color: #fff;
+}
+
+.contact-row {
+  display: flex;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-panel.dark .contact-row { border-bottom: 1px solid var(--line-dark); }
+
+.contact-row:first-child { padding-top: 0; }
+
+.contact-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+  width: 100px;
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+
+.contact-panel.dark .contact-label { color: var(--gold); }
+
+.contact-value {
+  font-size: 1rem;
+}
+
+.contact-value a:hover { color: var(--teal); }
+
+.contact-note {
+  margin-top: 28px;
+  font-size: 0.88rem;
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+@media (max-width: 860px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-panel { padding: 36px 28px; }
+}
