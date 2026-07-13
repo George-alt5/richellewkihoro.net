@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, UNSAFE_getTurboStreamSingleFetchDataStrategy } from "react-router-dom";
 
 const LINKS = [
     { label: "Home", to: "/" },
@@ -36,7 +36,22 @@ export default function Navbar(){
                     </NavLink>
                 ))}
                 </nav>
+                
+                <div className="nav-cta">
+                    <a href="/RWK-CV.pdf" download className="nav-link">CV</a>
+                    <button
+                    className="nav-toggle"
+                    aria-label={ open ? "Close menu" : "Open menu" }
+                    aria-expanded={ open }
+                    onClick={() => setOpen((v) => !v)}
+                    >
+                   <span style={{ transform: open ? "translateY(7px) rotate(45deg)" : "none" }} />
+                   <span style={{ opacity: open ? 0 : 1 }} />
+                   <span style={{ transform: open ? "translateY(-7px) rotate(-45deg)" : "none" }} />
+                    </button>
+                </div>
             </div>
+            
         </header>
     )
 }
