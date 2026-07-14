@@ -13,7 +13,7 @@ export default function Button({
     const classes = [
         "btn",
         `btn-${variant}`,
-        size === 'sm' ? "btn-sm" : "",
+        side === 'sm' ? "btn-sm" : "",
         variant === "outline" && onDark ? "on-dark" : "",
         className,
     ]

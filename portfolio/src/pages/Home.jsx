@@ -31,7 +31,7 @@ export default function Home() {
         <div className="home-hero-photo-wrap">
           <img
             className="home-hero-photo"
-            src="/richelle-portrait.jpg"
+            src="/richelle-kihoro.jpeg"
             alt="Richelle W. Kihoro"
             onError={(e) => { e.currentTarget.style.display = "none"; }}
           />
