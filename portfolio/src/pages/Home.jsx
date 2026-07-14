@@ -15,6 +15,15 @@ const FOCUS_AREAS = [
     },
 ];
 
+const LEDGER = [
+  { tag: "SERU 5203", label: "Female Genital Schistosomiasis — Tana River" },
+  { tag: "SERU 5405", label: "Serological Surveillance — Homa Bay & Kwale" },
+  { tag: "SERU 5175", label: "Molecular Xenomonitoring — Lymphatic Filariasis" },
+  { tag: "SERU 5153", label: "Schistosomiasis Monitoring — Intermediate Snails" },
+  { tag: "SERU 4776", label: "Post-Treatment Surveillance — Coastal Kenya" },
+  { tag: "KNH-UON P130", label: "Contraceptive Use — Nairobi County" },
+];
+
 export default function Home() {
   return (
     <>
