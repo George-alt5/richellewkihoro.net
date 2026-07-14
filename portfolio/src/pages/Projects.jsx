@@ -67,3 +67,75 @@ const PUBLICATIONS = [
     doi: "https://doi.org/10.1016/j.ijid.2019.11.004",
   },
 ];
+
+export default function Project() {
+  return (
+    <>
+      <section className="hero" style={{ paddingBottom: 56 }}>
+        <div className="hero-inner" style={{ paddingBottom: 40 }}>
+          <span className="eyebrow">Research &amp; Publications</span>
+          <h1 className="hero-title" style={{ fontSize: "clamp(2.2rem, 4.4vw, 3.4rem)" }}>
+            Studies I've led, and studies I've supported
+          </h1>
+          <p className="hero-lede">
+            A record of the research proposals I've served on as Principal
+            Investigator or Co-Investigator, and the peer-reviewed papers
+            they've produced.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap">
+          <div className="section-head">
+            <span className="section-label">Research proposals</span>
+            <h2 className="section-title">Field &amp; laboratory studies</h2>
+          </div>
+
+          <div className="role-label">As Principal Investigator</div>
+          {PI_STUDIES.map((s) => (
+            <div className="proposal-item" key={s.tag}>
+              <div className="item-tag">{s.tag}</div>
+              <div>
+                <div className="item-title">{s.title}</div>
+              </div>
+            </div>
+          ))}
+
+          <div className="role-label">As Co-Investigator</div>
+          {COI_STUDIES.map((s) => (
+            <div className="proposal-item" key={s.tag}>
+              <div className="item-tag">{s.tag}</div>
+              <div>
+                <div className="item-title">{s.title}</div>
+                <div className="item-meta">{s.pi}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="wrap">
+          <div className="section-head">
+            <span className="section-label">Publications</span>
+            <h2 className="section-title">Peer-reviewed papers</h2>
+          </div>
+
+          {PUBLICATIONS.map((p, i) => (
+            <div className="pub-item" key={i}>
+              <div className="item-tag">{p.year}</div>
+              <div>
+                <div className="item-title">{p.title}</div>
+                <div className="item-meta">{p.authors}</div>
+                <div className="item-meta">
+                  {p.journal} · <a href={p.doi} target="_blank" rel="noreferrer">View DOI</a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}
