@@ -48,14 +48,9 @@ export default function Home() {
 
         <div className="home-hero-social">
           <a href="https://www.linkedin.com/in/richelle-kihoro/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />
-            </svg>
-          </a>
-          <a href="mailto:rkihoro@kemri.go.ke" aria-label="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-              <rect x="3" y="5" width="18" height="14" rx="2" />
-              <path d="m3 7 9 6 9-6" />
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="24" height="24" rx="4" fill="#0A66C2" />
+              <path fill="#fff" d="M7.2 9.6h2.5v8.4H7.2V9.6zM8.45 8.5a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9zM11.5 9.6h2.4v1.15h.03c.33-.63 1.15-1.3 2.37-1.3 2.53 0 3 1.67 3 3.83v4.72h-2.5v-4.18c0-1 0-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2v4.26h-2.5V9.6z"/>
             </svg>
           </a>
         </div>
