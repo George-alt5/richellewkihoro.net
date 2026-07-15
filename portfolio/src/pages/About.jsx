@@ -55,18 +55,6 @@ const EXPERIENCE = [
   },
 ];
 
-const COURSES = [
-  ["Jul 2024", "Scientific Writing Workshop — CBEC-KEMRI Bioethics Training Initiative"],
-  ["Feb 2024", "KEMRI–JICA OMICs Training, Kenya Medical Research Institute"],
-  ["Dec 2023", "Leadership and Management in Health, University of Washington"],
-  ["Jun 2022", "Fundamentals of Global Health Research, University of Washington"],
-  ["Nov 2021", "Research and Public Health Ethics Certificate, CBEC-KEMRI"],
-  ["Aug 2021", "Principles and Practice of Clinical Research, National Institutes of Health"],
-  ["Apr 2020", "Project Management in Global Health, University of Washington"],
-  ["Jun 2019", "Good Clinical Lab Practices (GCLP), Global Health eLearning Center"],
-  ["Feb 2017", "ISO 15189:2012 Implementer Training, KEMRI"],
-];
-
 export default function About() {
   return (
     <>
@@ -164,23 +152,6 @@ export default function About() {
               </tr>
             </tbody>
           </table>
-
-          <div style={{ marginTop: 64 }}>
-            <div className="section-head" style={{ marginBottom: 24 }}>
-              <span className="section-label">Short courses &amp; training</span>
-              <h2 className="section-title">Continuing education</h2>
-            </div>
-            <table className="data-table">
-              <tbody>
-                {COURSES.map(([date, title]) => (
-                  <tr key={date}>
-                    <td>{date}</td>
-                    <td>{title}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
 
           <div style={{ marginTop: 48 }}>
             <span className="section-label">Membership</span>

@@ -46,9 +46,6 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-              <p className="contact-note">
-                References available upon request.
-              </p>
             </div>
 
             <div className="contact-panel dark">
