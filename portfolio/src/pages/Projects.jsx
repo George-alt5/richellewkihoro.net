@@ -55,11 +55,26 @@ const PUBLICATIONS = [
   {
     year: "2020",
     title: "Seroprevalence of yellow fever, dengue, West Nile and chikungunya viruses in children in Teso South Sub-County, Western Kenya",
-    authors: "Inziani, M., Adungo, F., Awando, J., Kihoro, R., Inoue, S., Morita, K., Obimbo, E., Onyango, F., Mwau, M.",
+    authors: "Inziani, M., Adungo, F., Awando, J., Kihoro, R.W., Inoue, S., Morita, K., Obimbo, E., Onyango, F., Mwau, M.",
     journal: "International Journal of Infectious Diseases 91: 104–110",
     doi: "https://doi.org/10.1016/j.ijid.2019.11.004",
   },
 ];
+
+function AuthorsLine({ authors }) {
+  const parts = authors.split(/(Kihoro,\s*R\.(?:W\.)?)/g);
+  return (
+    <>
+      {parts.map((part, idx) =>
+        /^Kihoro,\s*R\.(?:W\.)?$/.test(part) ? (
+          <strong key={idx}>{part}</strong>
+        ) : (
+          <span key={idx}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
 
 export default function Project() {
   return (
@@ -72,8 +87,8 @@ export default function Project() {
           </h1>
           <p className="hero-lede">
             A record of the research proposals I've served on as Principal
-            Investigator or Co-Investigator, and the peer-reviewed papers
-            they've produced.
+            Investigator or Co-Investigator, and the peer-reviewed research
+            papers they've produced.
           </p>
         </div>
       </section>
@@ -112,7 +127,7 @@ export default function Project() {
         <div className="wrap">
           <div className="section-head">
             <span className="section-label">Publications</span>
-            <h2 className="section-title">Peer-reviewed papers</h2>
+            <h2 className="section-title">Peer-reviewed research papers</h2>
           </div>
 
           {PUBLICATIONS.map((p, i) => (
@@ -120,7 +135,7 @@ export default function Project() {
               <div className="item-tag">{p.year}</div>
               <div>
                 <div className="item-title">{p.title}</div>
-                <div className="item-meta">{p.authors}</div>
+                <div className="item-meta"><AuthorsLine authors={p.authors} /></div>
                 <div className="item-meta">
                   {p.journal} · <a href={p.doi} target="_blank" rel="noreferrer">View DOI</a>
                 </div>
