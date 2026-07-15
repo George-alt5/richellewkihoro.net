@@ -39,7 +39,7 @@ export default function Home() {
 
         <div className="home-hero-content">
           <h1 className="home-hero-name">Richelle W. Kihoro</h1>
-          <p className="home-hero-tag">Malaria&nbsp;·&nbsp;NTDs&nbsp;·&nbsp;Community Health</p>
+          <p className="home-hero-tag">NTD’s&nbsp;·&nbsp;PUBLIC HEALTH&nbsp;·&nbsp;EPIDEMIOLOGY</p>
           <div className="home-hero-actions">
             <Button to="/research" variant="primary">View my research</Button>
             <Button to="/about" variant="outline" onDark>About me</Button>
