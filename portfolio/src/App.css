@@ -360,10 +360,15 @@
     padding: 40px 28px 56px;
   }
   .home-hero-social {
-    position: static;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: auto;
+    bottom: auto;
     transform: none;
-    flex-direction: row;
-    margin-top: 32px;
+    flex-direction: column;
+    margin-top: 0;
+    z-index: 4;
   }
 }
 
