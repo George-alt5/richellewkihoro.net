@@ -18,6 +18,10 @@ const EXPERIENCE = [
       "Supported \u201cEnhancing Ground Level Health Worker Capacity to Plan and Respond to COVID-19\u201d, an OSIEA-funded project",
       "Synthesized technical COVID-19 and health-systems literature into articles for scientific and lay audiences",
     ],
+    link: {
+      href: "https://healthpolicyhealthsystemandcovid19.wordpress.com/author/richellekihoro/",
+      label: "Read the articles",
+    },
   },
   {
     period: "Mar 2018 — Oct 2019",
@@ -121,6 +125,16 @@ export default function About() {
                       <li key={i}>{p}</li>
                     ))}
                   </ul>
+                  {item.link && (
+                    <a
+                      href={item.link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ display: "inline-block", marginTop: 8, fontSize: "0.9rem" }}
+                    >
+                      {item.link.label} →
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

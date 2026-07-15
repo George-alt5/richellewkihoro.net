@@ -73,6 +73,11 @@
   color: var(--ink);
   border-color: var(--ink);
 }
+.nav-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
 .nav-cta {
   position: absolute;
   right: 28px;

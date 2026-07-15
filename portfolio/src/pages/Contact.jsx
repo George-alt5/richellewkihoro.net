@@ -23,20 +23,24 @@ export default function Contact() {
           <div className="contact-grid">
             <div className="contact-panel">
               <div className="contact-row">
-                <div className="contact-label">Email</div>
+                <div className="contact-label">Personal Email</div>
                 <div className="contact-value">
                   <a href="mailto:richellewrk@gmail.com">richellewrk@gmail.com</a>
                 </div>
               </div>
               <div className="contact-row">
-                <div className="contact-label">Phone</div>
+                <div className="contact-label">Work Email</div>
                 <div className="contact-value">
-                  <a href="tel:+254726164421">+254 726 164 421</a>
+                  <a href="mailto:rkihoro@kemri.go.ke">rkihoro@kemri.go.ke</a>
                 </div>
               </div>
               <div className="contact-row">
-                <div className="contact-label">Address</div>
-                <div className="contact-value">P.O. Box 18357-00500, Nairobi, Kenya</div>
+                <div className="contact-label">ORCID</div>
+                <div className="contact-value">
+                  <a href="https://orcid.org/0000-0003-2512-1645" target="_blank" rel="noreferrer">
+                    orcid.org/0000-0003-2512-1645
+                  </a>
+                </div>
               </div>
               <div className="contact-row">
                 <div className="contact-label">LinkedIn</div>

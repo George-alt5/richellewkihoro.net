@@ -36,6 +36,9 @@ export default function Footer (){
                                 <a href="mailto:richellewrk@gmail.com">richellewrk@gmail.com</a>
                             </li>
                             <li>
+                                <a href="mailto:rkihoro@kemri.go.ke">rkihoro@kemri.go.ke</a>
+                            </li>
+                            <li>
                                 <a href="/RWK-CV.pdf" download>Download CV</a>
                             </li>
                         </ul>
