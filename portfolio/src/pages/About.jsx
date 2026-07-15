@@ -4,10 +4,10 @@ const EXPERIENCE = [
     role: "Research Scientist",
     org: "Kenya Medical Research Institute (KEMRI), ESACIPAC",
     points: [
-      "Coordinate field and laboratory activities across malaria and NTD studies to ensure timely, credible results",
+      "Perform molecular and serology laboratory assays to support epidemiological and public health research",
+      "Coordinate field and laboratory activities across malaria and NTD studies",
       "Review proposals, manuscripts, and abstracts for scientific and ethical rigor ahead of KEMRI's Scientific and Ethics Review Unit (SERU)",
       "Develop research protocols, analyze data, and author manuscripts for peer-reviewed publication",
-      "Served as rapporteur for two scientific sessions on NTDs and One Health at the 15th KEMRI Annual Scientific and Health Conference (2025)",
     ],
   },
   {
@@ -38,7 +38,6 @@ const EXPERIENCE = [
     org: "Centre for Health Solutions (CHS)",
     points: [
       "Implemented Tegemeza Plus, a PEPFAR/CDC-funded HIV programme, across four Kenyan counties",
-      "Assessed laboratory capacity and quality assurance needs using the CDC SIMS tool",
     ],
   },
   {
@@ -46,7 +45,7 @@ const EXPERIENCE = [
     role: "Student on Industrial Attachment",
     org: "Kenya Medical Research Institute (KEMRI)",
     points: [
-      "Rotated through Molecular Biology, Radio Isotope, Immunology, Parasitology, and Entomology laboratories",
+      "Rotated through Molecular Biology, Radio Isotope, Immunology, Parasitology, and Entomology laboratories in the  Centre for Biotechnology Research and Development (CBRD)",
     ],
   },
   {
@@ -72,9 +71,6 @@ export default function About() {
                 onError={(e) => { e.currentTarget.style.display = "none"; }}
               />
             </div>
-            <p className="bio-caption">
-              Richelle W. Kihoro, KEMRI-ESACIPAC — Nairobi, Kenya
-            </p>
           </div>
 
           <div className="bio-text">
@@ -88,20 +84,20 @@ export default function About() {
                 I am based at KEMRI's Eastern and Southern Africa Centre of International
                 Parasite Control (ESACIPAC), where I contribute to research that advances
                 the prevention and control of malaria and neglected tropical diseases.
-                My work supports evidence-based public health interventions that improve
-                health outcomes across communities in Eastern and Southern Africa.
+                My work supports evidence based public health interventions that improve
+                health outcomes across communities in Africa.
             </p>
             <p>
-                From research design to publication, I help deliver studies that are
-                scientifically rigorous, ethically sound, and operationally effective.
-                I coordinate multidisciplinary research teams, uphold laboratory and
-                biosafety standards, and contribute to the peer review of proposals
-                and scientific publications that advance public health research.
+                From research design to project implementation, I help deliver studies that are
+                scientifically rigorous and ethically sound. I work collaboratively in multidisciplinary
+                research teams,working alongside senior research scientists to advance research in neglected
+                tropical diseases.
             </p>
             <p>
-                I hold a Master of Public Health in Biostatistics and
-                Epidemiology from the University of Nairobi, and I'm a member of
-                the Royal Society of Tropical Medicine and Hygiene (RSTMH).
+                I hold a Bachelor of Science in Microbiology & Biotechnology and a
+                Master of Public Health specializing in Biostatistics and Epidemiology
+                from the University of Nairobi, I'm a member of the Royal Society of 
+                Tropical Medicine and Hygiene (RSTMH).
             </p>
           </div>
         </div>
