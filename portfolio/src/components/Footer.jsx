@@ -10,9 +10,11 @@ export default function Footer (){
                     <div>
                         <div className="footer-brand">Richelle W. Kihoro</div>
                         <p className="footer-tag">
-                            Research Scientist at the Kenya Medical Research Institute,
-                            working at the intersection of malaria, neglected tropical
-                            diseases, and community health.
+                        Research Scientist at the Kenya Medical 
+                        Research Institute, working at the intersection 
+                        of public health, epidemiology &  neglected tropical
+                        diseases research.
+                            
                         </p>
                     </div>
                     <div>
@@ -39,7 +41,7 @@ export default function Footer (){
                                 <a href="mailto:rkihoro@kemri.go.ke">rkihoro@kemri.go.ke</a>
                             </li>
                             <li>
-                                <a href="/RWK-CV.pdf" download>Download CV</a>
+                                <a href="/Richelle W. Kihoro_CV.pdf" download>Download CV</a>
                             </li>
                         </ul>
                     </div>

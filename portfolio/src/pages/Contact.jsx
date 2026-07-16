@@ -55,14 +55,14 @@ export default function Contact() {
             <div className="contact-panel dark">
               <span className="section-label" style={{ marginBottom: 18 }}>Prefer a document?</span>
               <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.6rem" }}>
-                Full CV, ready to download
+                CV, ready to download
               </h3>
               <p style={{ marginTop: 14, color: "rgba(255,255,255,0.72)", lineHeight: 1.7 }}>
-                Includes full career history, education, publications, research
-                proposals, and referee details.
+                Includes career history, education, publications, research
+                proposals.
               </p>
               <div style={{ marginTop: 28 }}>
-                <Button href="/RWK-CV.pdf" download variant="outline" onDark>
+                <Button href="/Richelle W. Kihoro_CV.pdf" download variant="outline" onDark>
                   Download CV (PDF)
                 </Button>
               </div>

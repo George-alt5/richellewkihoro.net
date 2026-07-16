@@ -3,15 +3,15 @@ import Button from "../components/Button"
 const FOCUS_AREAS = [
     {
         title: "Neglected Tropical Diseases",
-        body: "Field and epidemiological studies on schistosomiasis, soil-transmitted helminths, and lymphatic filariasis across endemic communities in Kenya.",
+        body: "Field and epidemiological studies on schistosomiasis, soil-transmitted helminths, trachoma and lymphatic filariasis across endemic communities in Kenya.",
     },
     {
-        title: "Molecular & Field Diagnostics",
-        body: "Developing and evaluating qPCR assays, serological methods, and xenomonitoring tools for parasitic disease surveillance.",
+        title: "Molecular & Serological Assays",
+        body: "Perform qPCR assays and multiplex bead assays to support serosurveillance.",
     },
     {
-        title:"Research Ethics & Review",
-        body: "Reviewing proposals, manuscripts, and abstracts for scientific and ethical rigor ahead of submission to KEMRI's Scientific and Ethics Review Unit.",
+        title:"Scholarly writing and scientific communication",
+        body: "Including award-winning grant proposals, peer-reviewed publications, and the presentation of research abstracts at scientific conferences.",
     },
 ];
 
@@ -154,7 +154,7 @@ export default function Home() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center", marginTop: 32 }}>
             <Button to="/contact" variant="primary">Get in touch</Button>
-            <Button href="/RWK-CV.pdf" download variant="outline" onDark>Download CV</Button>
+            <Button href="/Richelle W. Kihoro_CV.pdf" download variant="outline" onDark>Download CV</Button>
           </div>
         </div>
       </section>
