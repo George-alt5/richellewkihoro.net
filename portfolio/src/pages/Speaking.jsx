@@ -1,15 +1,15 @@
 const CONFERENCES = [
   {
-    title: "15th KEMRI Annual Scientific and Health Conference",
-    date: "11–14 February 2025",
-    role: "Rapporteur, two scientific sessions on \u201cNTDs and One Health\u201d",
-    body: "Documented and summarised discussions from 13 oral abstract presentations across the two sessions.",
-  },
-  {
     title: "KASH 16 Conference",
     date: "February 2026",
     role: "Best Abstract Presenter — two sessions",
     body: "Recognised for presentations in Scientific Session 13 (Public Health 2) and Scientific Session 33 (NTDs and One Health 2).",
+  },
+  {
+    title: "KASH 14 Conference and 9th East African Health & Scientific Conference",
+    date: "September 2023 & February 2024",
+    role: " Presented oral abstracts",
+    body: "Summarised findings on epidemiology of soil transmitted helminthiasis infection among school aged children of Narok County, Kenya.",
   },
 ];
 
@@ -30,7 +30,7 @@ const AWARDS = [
     org: "Royal Society of Tropical Medicine and Hygiene, in partnership with The Children's Investment Fund Foundation (CIFF)",
   },
   {
-    year: "2023 — date",
+    year: "2023 — 2026",
     title: "President's Fund Award",
     org: "Royal Society of Tropical Medicine and Hygiene",
   },
